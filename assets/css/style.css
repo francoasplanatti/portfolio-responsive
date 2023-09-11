@@ -849,6 +849,7 @@ img{
     height: 60px;
     border-radius: 50%;
     margin-right: var(--mb-0-75);
+    object-fit: scale-down;
 }
 
 .testimonial__name{
