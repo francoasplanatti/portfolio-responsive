@@ -216,3 +216,18 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = url;
     });
 });
+
+// Language selector
+// Changes language from English to Spanish
+
+var check = document.querySelector(".check");
+check.addEventListener("click", language);
+
+function language() {
+    let id = check.checked;
+    if(id==true){
+        location.href="assets/es/index.html";
+    }else{
+        location.href="../../index.html";
+    }
+}

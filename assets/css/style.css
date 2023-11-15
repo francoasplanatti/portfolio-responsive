@@ -257,6 +257,11 @@ img{
     color: var(--first-color);
 }
 
+.nav__item{
+    display: flex;
+    align-items: center;
+}
+
 .nav__icon{
     font-size: 1.2rem;
 }
@@ -272,6 +277,55 @@ img{
 
 .nav__close:hover{
     color: var(--first-color-alt);
+}
+
+.en{
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    padding-right: 5px;
+}
+
+.es{
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    padding-left: 5px;
+}
+
+.check{
+    align-items: center;
+    position: relative;
+    width: 30px;
+}
+
+.check:before{
+    content: '';
+    position: absolute;
+    width: 27px;
+    height: 12px;
+    background: var(--body-color);
+    border-radius: 15px;
+    border: 1.5px solid var(--first-color-lighter);
+}
+
+.check:after{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: var(--first-color);
+    border-radius: 15px;
+    transition: 0.25s;
+    box-sizing: border-box;
+}
+
+.check:checked:after{
+    left:15px;
+}
+
+.check:checked:before{
+    background: var(--first-color-lighter);
 }
 
     /* Show menu */
